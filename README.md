@@ -1,2 +1,2 @@
-# Good-of-Wrk
+# God of work
 agenda personal y ficha de alunmnos para catequista

@@ -1,2 +1,2 @@
-# Good-of-Work
-agenda personal y ficha de alubnos para catequistas 
+# Good-of-Wrk
+agenda personal y ficha de alunmnos para catequista

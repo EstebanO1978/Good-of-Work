@@ -1,3 +1,3 @@
 # God of work
-agenda personal y ficha de alunmnos para catequista
-el proyecto se encuetra en desarrolo
+Agenda ersonal y ficha de alunmnos para catequista
+El proyecto se encuetra en desarrolo

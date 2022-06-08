@@ -6,8 +6,8 @@ import java.io.IOException;
 //import java.util.Scanner;
 public class AddDat {
 
-private String Fecha,NombreApelldido,Domicilo,Grado,Colegio,BautizadoParroqui,Folio,Librio,NomPadre,NomMadre,Obesevacion;
-private String DNI;
+private String NombreApelldido,DNI,FechaN,NomPadre,NomMadre,Domicilo ,Telefono,Grado,Colegio,BautizadoParroqui,Folio,Librio,Obesevacion;
+//private String DNI;
  
    
   
@@ -30,6 +30,17 @@ public void setDNI(String dNI) {
 	DNI = dNI;
 }
 
+public String getFechaN() {
+	return FechaN;
+}
+
+
+public void setFechaN(String fechaN) {
+	FechaN = fechaN;
+}
+  
+ 
+
 
 public String getDomicilo() {
 	return Domicilo;
@@ -41,6 +52,14 @@ public void setDomicilo(String domicilo) {
 }
 
 
+public String getTelefono() {
+	return Telefono;
+}
+
+
+public void setTelefono(String telefono) {
+	Telefono = telefono;
+}
 public String getGrado() {
 	return Grado;
 }
@@ -127,7 +146,7 @@ public  void ApendW(){
     FileWriter fw = null;
 
     try {
-        String data = Fecha+","+NombreApelldido+","+ NombreApelldido+","+ Domicilo+","+Grado+","+ Colegio+","+BautizadoParroqui+","+Folio+","+Librio+","+NomPadre+","+NomMadre+","+Obesevacion;
+        String data = NombreApelldido+","+DNI+","+FechaN +","+ Domicilo+","+Telefono+","+Grado+","+ Colegio+","+BautizadoParroqui+","+Folio+","+Librio+","+NomPadre+","+NomMadre+","+Obesevacion;
         String path = "E:/Documentos unidad E/Eclipce/proyecto01/proyectYane/src/proyectYane/arch2.csv";
         File file = new File(path);
         // Si el archivo no existe, se crea!
@@ -162,13 +181,15 @@ public  void ApendW(){
 
 
 
-public AddDat(String fecha,String nombreApelldido, String dNI, String domicilo,
+public AddDat(String nombreApelldido, String dNI,String fechaN, String domicilo, String telefono,
 		String grado, String colegio, String bautizadoParroqui, String folio,
 		String librio, String nomPadre, String nomMadre, String obesevacion) {
 	super();
 	this.NombreApelldido = nombreApelldido;
 	this.DNI = dNI;
+	this.FechaN=fechaN;
 	this.Domicilo = domicilo;
+	this.Telefono=telefono;
 	this.Grado = grado;
 	this.Colegio = colegio;
 	this.BautizadoParroqui = bautizadoParroqui;
@@ -180,17 +201,9 @@ public AddDat(String fecha,String nombreApelldido, String dNI, String domicilo,
 }
 
 
-
-
-
-public String getFecha() {
-	return Fecha;
 }
 
 
-public void setFecha(String fecha) {
-	Fecha = fecha;
-}
-  
- 
-}
+
+
+
